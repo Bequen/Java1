@@ -3,14 +3,9 @@
 
 
 
-
-
-
-
-
 # Rozhraní a polymorfismus
 
-## https://github.com/Bequen/Java1
+## github.com/Bequen/Java1
 
 
 
@@ -265,6 +260,8 @@ class SkodovkaCityGo implements Driveable {
 }
 
 class MercedesBenz implements Driveable {
+	public int isShiny;
+
 	@Override
 	public void turnLeft(float degrees) {
 		// ...
@@ -289,11 +286,25 @@ class MercedesBenz implements Driveable {
 // ...
 
 {
+
+
+
+
+
 	// Objekt je typu našeho rozhraní
 	// Díky tomu mu můžeme přiřadit referenci na libovolný objekt, který toto rozhraní implementuje
 	Driveable car = new MercedesBenz();
+	car.speedUp();
 	
 	car = new SkodovkaCityGo();
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 // ...
